@@ -224,12 +224,13 @@ function sendMessages()
             return
         else
             cli:sendMessage(msg, channel)
+            sendMessage(<@!219514006216276320>)
         end
         local w, h = term.getSize()
         term.setCursorPos(1, h-1)
         write("                                                  ")
         term.setCursorPos(1, h-1)
-        write("> <@!219514006216276320>")
+        write("> ")
         waiting = true
     end
 end
