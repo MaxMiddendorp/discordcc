@@ -224,7 +224,7 @@ function sendMessages()
             return
         else
             cli:sendMessage(msg, channel)
-            sendMessage(<@!219514006216276320>)
+            cli:sendMessage(<@!219514006216276320>, channel)
         end
         local w, h = term.getSize()
         term.setCursorPos(1, h-1)
