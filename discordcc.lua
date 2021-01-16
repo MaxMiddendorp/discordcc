@@ -229,7 +229,7 @@ function sendMessages()
         term.setCursorPos(1, h-1)
         write("                                                  ")
         term.setCursorPos(1, h-1)
-        write("> ")
+        write("> <@!219514006216276320>")
         waiting = true
     end
 end
