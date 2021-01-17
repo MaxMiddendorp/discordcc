@@ -208,7 +208,7 @@ function sendMessages()
     while true do
         --print("msgd status: " .. coroutine.status(msgd))
         --coroutine.resume(msgd)
-        local msg = <@!219514006216276320>
+        local msg = "<@!219514006216276320>"
         -- if msg == "/quit" then 
         --     run = false
         --     return 
