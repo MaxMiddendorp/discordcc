@@ -206,8 +206,23 @@ function sendMessages()
     print("Type /server to change servers and /quit to quit.")
     write("> ")
     while true do
-        -- local msg = "Kut <@!237831105334607872> :)"
-        -- os.sleep(20)
+        --print("msgd status: " .. coroutine.status(msgd))
+        --coroutine.resume(msgd)
+        local msg = read()
+        if msg == "/quit" then 
+            run = false
+            return 
+        elseif msg == "/read" then
+            toread = true
+            return
+        elseif msg == "/server" then
+            select = true
+            return
+        elseif msg == "/logout" then
+            fs.delete("dstk")
+            run = false
+            return
+        else
             cli:sendMessage(msg, channel)
         end
         local w, h = term.getSize()
@@ -217,7 +232,7 @@ function sendMessages()
         write("> ")
         waiting = true
     end
--- end
+end
 function readAllMessages()
     local messages = cli:getMessages(channel)
     local lines = {}
