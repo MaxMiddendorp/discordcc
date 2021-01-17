@@ -232,7 +232,7 @@ function sendMessages()
         write("> ")
         waiting = true
     end
-end
+-- end
 function readAllMessages()
     local messages = cli:getMessages(channel)
     local lines = {}
