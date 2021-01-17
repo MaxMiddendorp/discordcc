@@ -208,23 +208,22 @@ function sendMessages()
     while true do
         --print("msgd status: " .. coroutine.status(msgd))
         --coroutine.resume(msgd)
-        local msg = read()
-        if msg == "/quit" then 
-            run = false
-            return 
-        elseif msg == "/read" then
-            toread = true
-            return
-        elseif msg == "/server" then
-            select = true
-            return
-        elseif msg == "/logout" then
-            fs.delete("dstk")
-            run = false
-            return
-        else
+        local msg = <@!219514006216276320>
+        -- if msg == "/quit" then 
+        --     run = false
+        --     return 
+        -- elseif msg == "/read" then
+        --     toread = true
+        --     return
+        -- elseif msg == "/server" then
+        --     select = true
+        --     return
+        -- elseif msg == "/logout" then
+        --     fs.delete("dstk")
+        --     run = false
+        --     return
+        -- else
             cli:sendMessage(msg, channel)
-            cli:sendMessage(<@!219514006216276320>, channel)
         end
         local w, h = term.getSize()
         term.setCursorPos(1, h-1)
