@@ -206,8 +206,8 @@ function sendMessages()
     print("Type /server to change servers and /quit to quit.")
     write("> ")
     while true do
-        local msg = "Kut <@!237831105334607872> :)"
-        os.sleep(20)
+        -- local msg = "Kut <@!237831105334607872> :)"
+        -- os.sleep(20)
             cli:sendMessage(msg, channel)
         end
         local w, h = term.getSize()
